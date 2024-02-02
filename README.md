@@ -18,9 +18,9 @@ Changed ngsw-config.json for profile route
 
 Run `npm run test` for unit test
 
-## Push Notifications
+## Test Push Notifications
 
 1. Go to https://testfcm.com/
 2. Add server key
-3. Add FCM registration token/device token
+3. Copy FCM registration token/device token from the console
 4. Add title and body
