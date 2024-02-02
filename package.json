@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "start:local": "npm-run-all --parallel mock:server start",
-    "mock:server": "json-server --watch db.json --port 5000"
+    "mock:server": "json-server --watch db.json --port 5000",
+    "start-pwa": "ng build --configuration=production && http-server -p 8080 -c-1 dist/pwa-test"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@angular/service-worker": "^16.1.0",
     "bootstrap": "^5.3.2",
     "firebase": "^10.8.0",
+    "http-server": "^14.1.1",
     "json-server": "^1.0.0-alpha.23",
     "ngx-toastr": "^18.0.0",
     "npm-run-all": "^4.1.5",
