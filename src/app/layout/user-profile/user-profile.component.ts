@@ -7,12 +7,16 @@ import { UserprofileService } from './userprofile.service';
   styleUrls: ['./user-profile.component.scss'],
 })
 export class UserProfileComponent implements OnInit {
-  usesProfile: any;
+  userProfile: any;
   constructor(private userProfileService: UserprofileService) {}
 
   ngOnInit(): void {
+    this.getUserProfileData();
+  }
+
+  getUserProfileData() {
     this.userProfileService.getUserProfile().subscribe((res) => {
-      this.usesProfile = res;
+      this.userProfile = res;
     });
   }
 }
