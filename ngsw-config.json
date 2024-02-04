@@ -29,13 +29,12 @@
   ],
   "dataGroups": [
     {
-      "name": "api-profile",
+      "name": "api-performance",
       "urls": ["/profile"],
       "cacheConfig": {
         "strategy": "performance",
         "maxSize": 100,
-        "maxAge": "3d",
-        "timeout": "10s"
+        "maxAge": "3d"
       }
     }
   ]
